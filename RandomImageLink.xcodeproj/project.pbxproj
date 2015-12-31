@@ -7,12 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F41542A1A9C22D4006F4A4A /* PQImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4154291A9C22D4006F4A4A /* PQImage.m */; };
+		6F41542D1A9C22EA006F4A4A /* PQImageCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F41542C1A9C22EA006F4A4A /* PQImageCategory.m */; };
 		6F86D28E1A94B63000E91163 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F86D28D1A94B63000E91163 /* AppDelegate.m */; };
 		6F86D2901A94B63000E91163 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F86D28F1A94B63000E91163 /* main.m */; };
-		6F86D2931A94B63000E91163 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F86D2921A94B63000E91163 /* ViewController.m */; };
 		6F86D2951A94B63000E91163 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F86D2941A94B63000E91163 /* Images.xcassets */; };
 		6F86D2981A94B63000E91163 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F86D2961A94B63000E91163 /* Main.storyboard */; };
 		6F86D2A41A94B63000E91163 /* RandomImageLinkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F86D2A31A94B63000E91163 /* RandomImageLinkTests.m */; };
+		6FE7D6181A9AD2C90043CC75 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE7D6161A9AD2C90043CC75 /* Bolts.framework */; };
+		6FE7D6191A9AD2C90043CC75 /* ParseOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE7D6171A9AD2C90043CC75 /* ParseOSX.framework */; };
+		6FE7D61B1A9AD2F60043CC75 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE7D61A1A9AD2F60043CC75 /* CFNetwork.framework */; };
+		6FE7D61D1A9AD2FF0043CC75 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE7D61C1A9AD2FF0043CC75 /* CoreGraphics.framework */; };
+		6FE7D61F1A9AD3040043CC75 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE7D61E1A9AD3040043CC75 /* CoreLocation.framework */; };
+		6FE7D6211A9AD3090043CC75 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE7D6201A9AD3090043CC75 /* QuartzCore.framework */; };
+		6FE7D6231A9AD3100043CC75 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE7D6221A9AD3100043CC75 /* Security.framework */; };
+		6FE7D6251A9AD3180043CC75 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE7D6241A9AD3180043CC75 /* SystemConfiguration.framework */; };
+		6FE7D6271A9AD3210043CC75 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE7D6261A9AD3210043CC75 /* libsqlite3.dylib */; };
+		6FE7D6291A9AD3300043CC75 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE7D6281A9AD3300043CC75 /* libz.dylib */; };
+		6FE7D62B1A9AD3510043CC75 /* Bolts.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6FE7D6161A9AD2C90043CC75 /* Bolts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FE7D62C1A9AD3510043CC75 /* ParseOSX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6FE7D6171A9AD2C90043CC75 /* ParseOSX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6FF909701A96E6470001FF0D /* PQOptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF9096F1A96E6470001FF0D /* PQOptionViewController.m */; };
+		6FF909781A96E8810001FF0D /* PQAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF909771A96E8810001FF0D /* PQAboutViewController.m */; };
+		6FF909831A9746160001FF0D /* PQBorderlessWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF909821A9746160001FF0D /* PQBorderlessWindow.m */; };
+		6FF909861A9748A40001FF0D /* PQTransparentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF909851A9748A40001FF0D /* PQTransparentView.m */; };
+		6FF909891A974A3E0001FF0D /* PQCopiedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF909881A974A3E0001FF0D /* PQCopiedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,19 +43,55 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6FE7D62A1A9AD33E0043CC75 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6FE7D62B1A9AD3510043CC75 /* Bolts.framework in CopyFiles */,
+				6FE7D62C1A9AD3510043CC75 /* ParseOSX.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6F4154281A9C22D4006F4A4A /* PQImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQImage.h; sourceTree = "<group>"; };
+		6F4154291A9C22D4006F4A4A /* PQImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQImage.m; sourceTree = "<group>"; };
+		6F41542B1A9C22EA006F4A4A /* PQImageCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQImageCategory.h; sourceTree = "<group>"; };
+		6F41542C1A9C22EA006F4A4A /* PQImageCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQImageCategory.m; sourceTree = "<group>"; };
 		6F86D2871A94B63000E91163 /* RandomImageLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomImageLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F86D28B1A94B63000E91163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F86D28C1A94B63000E91163 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6F86D28D1A94B63000E91163 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6F86D28F1A94B63000E91163 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6F86D2911A94B63000E91163 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6F86D2921A94B63000E91163 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6F86D2941A94B63000E91163 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6F86D2971A94B63000E91163 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F86D29D1A94B63000E91163 /* RandomImageLinkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomImageLinkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F86D2A21A94B63000E91163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F86D2A31A94B63000E91163 /* RandomImageLinkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RandomImageLinkTests.m; sourceTree = "<group>"; };
+		6FE7D6161A9AD2C90043CC75 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		6FE7D6171A9AD2C90043CC75 /* ParseOSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseOSX.framework; sourceTree = "<group>"; };
+		6FE7D61A1A9AD2F60043CC75 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		6FE7D61C1A9AD2FF0043CC75 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6FE7D61E1A9AD3040043CC75 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6FE7D6201A9AD3090043CC75 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6FE7D6221A9AD3100043CC75 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		6FE7D6241A9AD3180043CC75 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6FE7D6261A9AD3210043CC75 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		6FE7D6281A9AD3300043CC75 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		6FF9096E1A96E6470001FF0D /* PQOptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQOptionViewController.h; sourceTree = "<group>"; };
+		6FF9096F1A96E6470001FF0D /* PQOptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQOptionViewController.m; sourceTree = "<group>"; };
+		6FF909761A96E8810001FF0D /* PQAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQAboutViewController.h; sourceTree = "<group>"; };
+		6FF909771A96E8810001FF0D /* PQAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQAboutViewController.m; sourceTree = "<group>"; };
+		6FF909811A9746160001FF0D /* PQBorderlessWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQBorderlessWindow.h; sourceTree = "<group>"; };
+		6FF909821A9746160001FF0D /* PQBorderlessWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQBorderlessWindow.m; sourceTree = "<group>"; };
+		6FF909841A9748A40001FF0D /* PQTransparentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQTransparentView.h; sourceTree = "<group>"; };
+		6FF909851A9748A40001FF0D /* PQTransparentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQTransparentView.m; sourceTree = "<group>"; };
+		6FF909871A974A3E0001FF0D /* PQCopiedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQCopiedViewController.h; sourceTree = "<group>"; };
+		6FF909881A974A3E0001FF0D /* PQCopiedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQCopiedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +99,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FE7D6291A9AD3300043CC75 /* libz.dylib in Frameworks */,
+				6FE7D6271A9AD3210043CC75 /* libsqlite3.dylib in Frameworks */,
+				6FE7D6251A9AD3180043CC75 /* SystemConfiguration.framework in Frameworks */,
+				6FE7D6231A9AD3100043CC75 /* Security.framework in Frameworks */,
+				6FE7D6211A9AD3090043CC75 /* QuartzCore.framework in Frameworks */,
+				6FE7D61F1A9AD3040043CC75 /* CoreLocation.framework in Frameworks */,
+				6FE7D61D1A9AD2FF0043CC75 /* CoreGraphics.framework in Frameworks */,
+				6FE7D61B1A9AD2F60043CC75 /* CFNetwork.framework in Frameworks */,
+				6FE7D6181A9AD2C90043CC75 /* Bolts.framework in Frameworks */,
+				6FE7D6191A9AD2C90043CC75 /* ParseOSX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,11 +145,24 @@
 			children = (
 				6F86D28C1A94B63000E91163 /* AppDelegate.h */,
 				6F86D28D1A94B63000E91163 /* AppDelegate.m */,
-				6F86D2911A94B63000E91163 /* ViewController.h */,
-				6F86D2921A94B63000E91163 /* ViewController.m */,
+				6F4154281A9C22D4006F4A4A /* PQImage.h */,
+				6F4154291A9C22D4006F4A4A /* PQImage.m */,
+				6F41542B1A9C22EA006F4A4A /* PQImageCategory.h */,
+				6F41542C1A9C22EA006F4A4A /* PQImageCategory.m */,
+				6FF9096E1A96E6470001FF0D /* PQOptionViewController.h */,
+				6FF9096F1A96E6470001FF0D /* PQOptionViewController.m */,
+				6FF909761A96E8810001FF0D /* PQAboutViewController.h */,
+				6FF909771A96E8810001FF0D /* PQAboutViewController.m */,
+				6FF909871A974A3E0001FF0D /* PQCopiedViewController.h */,
+				6FF909881A974A3E0001FF0D /* PQCopiedViewController.m */,
 				6F86D2941A94B63000E91163 /* Images.xcassets */,
 				6F86D2961A94B63000E91163 /* Main.storyboard */,
 				6F86D28A1A94B63000E91163 /* Supporting Files */,
+				6FF909811A9746160001FF0D /* PQBorderlessWindow.h */,
+				6FF909821A9746160001FF0D /* PQBorderlessWindow.m */,
+				6FF909841A9748A40001FF0D /* PQTransparentView.h */,
+				6FF909851A9748A40001FF0D /* PQTransparentView.m */,
+				6FE7D6151A9AD2B40043CC75 /* Frameworks */,
 			);
 			path = RandomImageLink;
 			sourceTree = "<group>";
@@ -116,6 +193,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6FE7D6151A9AD2B40043CC75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FE7D6281A9AD3300043CC75 /* libz.dylib */,
+				6FE7D6261A9AD3210043CC75 /* libsqlite3.dylib */,
+				6FE7D6241A9AD3180043CC75 /* SystemConfiguration.framework */,
+				6FE7D6221A9AD3100043CC75 /* Security.framework */,
+				6FE7D6201A9AD3090043CC75 /* QuartzCore.framework */,
+				6FE7D61E1A9AD3040043CC75 /* CoreLocation.framework */,
+				6FE7D61C1A9AD2FF0043CC75 /* CoreGraphics.framework */,
+				6FE7D61A1A9AD2F60043CC75 /* CFNetwork.framework */,
+				6FE7D6161A9AD2C90043CC75 /* Bolts.framework */,
+				6FE7D6171A9AD2C90043CC75 /* ParseOSX.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,6 +220,7 @@
 				6F86D2831A94B63000E91163 /* Sources */,
 				6F86D2841A94B63000E91163 /* Frameworks */,
 				6F86D2851A94B63000E91163 /* Resources */,
+				6FE7D62A1A9AD33E0043CC75 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -215,9 +310,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F86D2931A94B63000E91163 /* ViewController.m in Sources */,
+				6F41542A1A9C22D4006F4A4A /* PQImage.m in Sources */,
+				6F41542D1A9C22EA006F4A4A /* PQImageCategory.m in Sources */,
+				6FF909701A96E6470001FF0D /* PQOptionViewController.m in Sources */,
+				6FF909781A96E8810001FF0D /* PQAboutViewController.m in Sources */,
+				6FF909861A9748A40001FF0D /* PQTransparentView.m in Sources */,
+				6FF909891A974A3E0001FF0D /* PQCopiedViewController.m in Sources */,
 				6F86D2901A94B63000E91163 /* main.m in Sources */,
 				6F86D28E1A94B63000E91163 /* AppDelegate.m in Sources */,
+				6FF909831A9746160001FF0D /* PQBorderlessWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,8 +433,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RandomImageLink",
+				);
 				INFOPLIST_FILE = RandomImageLink/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -343,8 +449,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RandomImageLink",
+				);
 				INFOPLIST_FILE = RandomImageLink/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -404,6 +515,7 @@
 				6F86D2A91A94B63000E91163 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6F86D2AA1A94B63000E91163 /* Build configuration list for PBXNativeTarget "RandomImageLinkTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +524,7 @@
 				6F86D2AC1A94B63000E91163 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
